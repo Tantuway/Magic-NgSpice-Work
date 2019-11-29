@@ -1,8 +1,0 @@
-timestamp 0
-version 8.0
-tech scmos
-style lambda=1.0(scna20_orb)
-scale 1000 1 100
-resistclasses 26670 59550 23860 19690 27260 2000000 49 26 2505830
-node "b" 16637 390688 -49 -27 p 0 0 0 0 3552 3152 0 0 0 0 0 0 96 64 0 0 0 0
-equiv "b" "a"
