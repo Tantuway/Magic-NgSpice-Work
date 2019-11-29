@@ -1,0 +1,26 @@
+timestamp 1569392509
+version 8.0
+tech scmos
+style lambda=1.0(scna20_orb)
+scale 1000 1 100
+resistclasses 26670 59550 23860 19690 27260 2000000 49 26 2505830
+node "DS" 40 0 1 -22 ndiff 96 40 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "gnd!" 632 8272 -6 -30 ppc 40 26 48 48 0 0 0 0 0 0 0 0 256 92 0 0 0 0
+equiv "gnd!" "gnd!"
+node "NAND_AB" 123 5264 1 6 pdiff 40 26 192 56 0 0 0 0 0 0 0 0 224 120 0 0 0 0
+equiv "NAND_AB" "NAND_AB"
+equiv "NAND_AB" "NAND_AB"
+node "IN_B" 599 9818 7 -11 pc 0 0 0 0 124 116 0 0 0 0 0 0 84 50 0 0 0 0
+equiv "IN_B" "IN_B"
+node "IN_A" 596 7306 -5 -4 pc 0 0 0 0 116 112 0 0 0 0 0 0 28 22 0 0 0 0
+node "vdd!" 3388 0 -8 4 nw 48 48 160 84 0 0 0 0 0 0 0 0 342 146 0 0 870 118
+equiv "vdd!" "vdd!"
+cap "IN_A" "IN_B" 240
+cap "IN_B" "NAND_AB" 240
+cap "vdd!" "IN_A" 1670
+cap "vdd!" "IN_B" 1670
+cap "vdd!" "NAND_AB" 376
+device mosfet nfet 13 -22 14 -21 2 8 "Gnd!" "IN_B" 4 0 "DS" 8 0 "NAND_AB" 8 0
+device mosfet nfet -1 -22 0 -21 2 8 "Gnd!" "IN_A" 4 0 "gnd!" 8 0 "DS" 8 0
+device mosfet pfet 13 6 14 7 2 16 "vdd!" "IN_B" 4 0 "NAND_AB" 16 0 "vdd!" 16 0
+device mosfet pfet -1 6 0 7 2 16 "vdd!" "IN_A" 4 0 "vdd!" 16 0 "NAND_AB" 16 0

@@ -1,0 +1,55 @@
+timestamp 1569418921
+version 8.0
+tech scmos
+style lambda=1.0(scna20_orb)
+scale 1000 1 100
+resistclasses 26670 59550 23860 19690 27260 2000000 49 26 2505830
+use NAND NAND_0 1 0 -9 0 1 34
+use NAND NAND_1 1 0 29 0 1 34
+use Inverter Inverter_0 1 0 -56 0 1 -43
+use NAND NAND_2 1 0 -9 0 -1 -39
+use NAND NAND_3 1 0 29 0 -1 -38
+node "gnd!" 0 5464 -49 -74 v 0 0 0 0 0 0 0 0 0 0 0 0 16 16 444 98 0 0
+node "Q" 2 21494 15 -38 v 0 0 0 0 0 0 0 0 0 0 0 0 28 22 1122 536 0 0
+node "m1_8_n31#" 0 3008 8 -31 m1 0 0 0 0 0 0 0 0 0 0 0 0 64 40 0 0 0 0
+node "m1_n40_n50#" 0 3138 -40 -50 v 0 0 0 0 0 0 0 0 0 0 0 0 32 32 150 78 0 0
+node "m1_n38_n74#" 1 80605 -38 -74 m1 0 0 0 0 0 0 0 0 0 0 0 0 1715 338 0 0 0 0
+node "QBAR" 2 12661 15 22 v 0 0 0 0 0 0 0 0 0 0 0 0 157 102 527 266 0 0
+node "CLK" 2 13129 -83 -13 v 0 0 0 0 0 0 0 0 0 0 0 0 152 92 699 342 0 0
+node "m1_8_30#" 0 1960 8 30 v 0 0 0 0 0 0 0 0 0 0 0 0 32 32 56 36 0 0
+node "D" 2 13168 -63 -49 v 0 0 0 0 0 0 0 0 0 0 0 0 36 34 832 424 0 0
+node "m1_n114_n92#" 1 389489 -114 -92 m1 0 0 0 0 0 0 0 0 0 0 0 0 8287 974 0 0 0 0
+cap "CLK" "m1_n38_n74#" 4140
+cap "m1_n114_n92#" "gnd!" 8100
+cap "D" "CLK" 900
+cap "m1_n114_n92#" "Q" 1080
+cap "QBAR" "Q" 900
+cap "m1_n114_n92#" "CLK" 9720
+cap "QBAR" "m1_n38_n74#" 8145
+cap "m1_n114_n92#" "D" 7920
+cap "m1_n38_n74#" "m1_n40_n50#" 1440
+cap "NAND_1/NAND_AB" "Q" 720
+merge "NAND_1/IN_B" "NAND_3/NAND_AB" 6204 0 0 0 0 0 0 0 0 0 0 0 0 132 -28 0 0 0 0
+merge "NAND_3/NAND_AB" "QBAR"
+merge "NAND_3/IN_B" "NAND_2/NAND_AB" 17108 0 0 0 0 0 0 0 0 0 0 0 0 364 -28 0 0 0 0
+merge "NAND_2/NAND_AB" "m1_8_n31#"
+merge "NAND_0/IN_B" "NAND_2/IN_B" 14852 0 0 0 0 0 0 0 0 0 0 0 0 316 -24 0 0 0 0
+merge "NAND_2/IN_B" "CLK"
+merge "NAND_1/gnd!" "NAND_0/gnd!" -23819 0 0 0 0 0 0 0 0 0 0 0 0 -489 -334 0 0 0 0
+merge "NAND_0/gnd!" "NAND_3/gnd!"
+merge "NAND_3/gnd!" "NAND_2/gnd!"
+merge "NAND_2/gnd!" "Inverter_0/gnd!"
+merge "Inverter_0/gnd!" "m1_n38_n74#"
+merge "m1_n38_n74#" "gnd!"
+merge "NAND_3/IN_A" "Q" 3467 0 0 0 0 0 0 0 0 0 0 0 0 172 -10 -263 -137 0 0
+merge "NAND_1/IN_A" "NAND_0/NAND_AB" -1692 0 0 0 0 0 0 0 0 0 0 0 0 -36 -26 0 0 0 0
+merge "NAND_0/NAND_AB" "m1_8_30#"
+merge "NAND_2/IN_A" "Inverter_0/OUT" -658 0 0 0 0 0 0 0 0 0 0 0 0 -14 -22 0 0 0 0
+merge "Inverter_0/OUT" "m1_n40_n50#"
+merge "NAND_1/vdd!" "NAND_0/vdd!" -38634 0 0 0 0 0 0 0 0 0 0 0 0 -707 -360 0 0 0 0
+merge "NAND_0/vdd!" "NAND_3/vdd!"
+merge "NAND_3/vdd!" "NAND_2/vdd!"
+merge "NAND_2/vdd!" "Inverter_0/vdd!"
+merge "Inverter_0/vdd!" "m1_n114_n92#"
+merge "NAND_0/IN_A" "Inverter_0/IN" 15040 0 0 0 0 0 0 0 0 0 0 0 0 320 -20 0 0 0 0
+merge "Inverter_0/IN" "D"

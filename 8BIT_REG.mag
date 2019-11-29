@@ -1,0 +1,123 @@
+magic
+tech scmos
+timestamp 1569431344
+<< metal1 >>
+rect 397 328 2127 374
+<< metal2 >>
+rect 526 298 533 383
+rect 784 302 791 384
+rect 1015 302 1022 383
+rect 547 298 559 302
+rect 779 299 791 302
+rect 779 298 789 299
+rect 1010 298 1022 302
+rect 1242 298 1252 302
+rect 1262 299 1269 384
+rect 1475 302 1482 384
+rect 1713 302 1720 384
+rect 1475 298 1484 302
+rect 1705 299 1720 302
+rect 1705 298 1717 299
+rect 1940 298 1952 302
+rect 1961 299 1968 384
+rect 2160 299 2167 384
+rect 1482 260 1502 263
+rect 1482 256 1490 260
+rect 1494 256 1502 260
+rect 1482 169 1502 256
+rect 356 123 2086 169
+rect 1482 101 1502 123
+<< metal3 >>
+rect 337 260 357 261
+rect 337 256 338 260
+rect 342 256 357 260
+rect 337 143 357 256
+rect 553 260 572 262
+rect 787 260 807 261
+rect 553 256 559 260
+rect 563 256 573 260
+rect 553 143 573 256
+rect 787 256 796 260
+rect 800 256 807 260
+rect 787 143 807 256
+rect 1020 260 1040 261
+rect 1020 256 1026 260
+rect 1030 256 1040 260
+rect 1020 143 1040 256
+rect 1250 260 1270 261
+rect 1250 256 1256 260
+rect 1260 256 1270 260
+rect 1250 143 1270 256
+rect 1482 260 1502 263
+rect 1482 256 1490 260
+rect 1494 256 1502 260
+rect 1482 143 1502 256
+rect 1715 260 1735 262
+rect 1715 256 1723 260
+rect 1728 256 1735 260
+rect 1715 143 1735 256
+rect 1949 260 1969 261
+rect 1949 256 1955 260
+rect 1960 256 1969 260
+rect 1949 143 1969 256
+rect 337 85 2108 143
+<< m3contact >>
+rect 338 256 342 260
+rect 559 256 563 260
+rect 796 256 800 260
+rect 1026 256 1030 260
+rect 1256 256 1260 260
+rect 1490 256 1494 260
+rect 1723 256 1728 260
+rect 1955 256 1960 260
+use D_Flip_Flop  D_Flip_Flop_0
+timestamp 1569418921
+transform 1 0 457 0 1 268
+box -134 -106 93 68
+use D_Flip_Flop  D_Flip_Flop_2
+timestamp 1569418921
+transform 1 0 689 0 1 268
+box -134 -106 93 68
+use D_Flip_Flop  D_Flip_Flop_3
+timestamp 1569418921
+transform 1 0 921 0 1 268
+box -134 -106 93 68
+use D_Flip_Flop  D_Flip_Flop_4
+timestamp 1569418921
+transform 1 0 1152 0 1 268
+box -134 -106 93 68
+use D_Flip_Flop  D_Flip_Flop_5
+timestamp 1569418921
+transform 1 0 1384 0 1 268
+box -134 -106 93 68
+use D_Flip_Flop  D_Flip_Flop_6
+timestamp 1569418921
+transform 1 0 1616 0 1 268
+box -134 -106 93 68
+use D_Flip_Flop  D_Flip_Flop_7
+timestamp 1569418921
+transform 1 0 1849 0 1 268
+box -134 -106 93 68
+use D_Flip_Flop  D_Flip_Flop_8
+timestamp 1569418921
+transform 1 0 2081 0 1 268
+box -134 -106 93 68
+use D_Flip_Flop  D_Flip_Flop_1
+timestamp 1569418921
+transform 1 0 21119 0 1 -10096
+box -134 -106 93 68
+<< labels >>
+rlabel metal1 820 353 962 360 1 vdd!
+rlabel metal2 391 150 533 157 1 gnd!
+rlabel space 323 256 323 260 3 REG_CLK
+rlabel space 323 298 323 302 3 REG_IN
+rlabel space 2174 298 2174 302 1 REG_OUT
+rlabel metal2 526 383 533 383 5 OUT0
+rlabel metal2 784 384 791 384 5 OUT1
+rlabel metal2 1015 383 1022 383 5 OUT2
+rlabel metal2 1262 384 1269 384 5 OUT3
+rlabel metal2 1475 384 1482 384 5 OUT4
+rlabel metal2 1713 384 1720 384 5 OUT5
+rlabel metal2 1961 384 1968 384 5 OUT6
+rlabel metal2 2160 384 2167 384 5 OUT7
+<< end >>

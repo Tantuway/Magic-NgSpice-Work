@@ -1,0 +1,50 @@
+timestamp 1569433945
+version 8.0
+tech scmos
+style lambda=1.0(scna20_orb)
+scale 1000 1 100
+resistclasses 26670 59550 23860 19690 27260 2000000 49 26 2505830
+use FULL_ADDER FULL_ADDER_2 1 0 -647 0 1 190
+use FULL_ADDER FULL_ADDER_1 1 0 -308 0 1 187
+use FULL_ADDER FULL_ADDER_0 1 0 36 0 1 185
+use FULL_ADDER FULL_ADDER_3 1 0 374 0 1 184
+use FULL_ADDER FULL_ADDER_4 1 0 713 0 1 181
+use FULL_ADDER FULL_ADDER_5 1 0 1047 0 1 179
+use FULL_ADDER FULL_ADDER_6 1 0 1385 0 1 181
+use FULL_ADDER FULL_ADDER_7 1 0 1719 0 1 179
+node "m1_n649_n42#" 3 6.16278e+06 -649 -42 m1 0 0 0 0 0 0 0 0 0 0 0 0 131123 5394 0 0 0 0
+node "m1_n648_291#" 6 2.59976e+06 -648 291 m1 0 0 0 0 0 0 0 0 0 0 0 0 55314 5310 0 0 0 0
+merge "FULL_ADDER_7/vdd!" "FULL_ADDER_7/XOR_1/vdd!" -1.28865e+06 0 0 0 0 0 0 0 0 0 0 0 0 -27418 -4531 0 0 0 0
+merge "FULL_ADDER_7/XOR_1/vdd!" "FULL_ADDER_7/XOR_0/vdd!"
+merge "FULL_ADDER_7/XOR_0/vdd!" "FULL_ADDER_6/XOR_1/vdd!"
+merge "FULL_ADDER_6/XOR_1/vdd!" "FULL_ADDER_6/vdd!"
+merge "FULL_ADDER_6/vdd!" "FULL_ADDER_6/XOR_0/vdd!"
+merge "FULL_ADDER_6/XOR_0/vdd!" "FULL_ADDER_5/vdd!"
+merge "FULL_ADDER_5/vdd!" "FULL_ADDER_5/XOR_1/vdd!"
+merge "FULL_ADDER_5/XOR_1/vdd!" "FULL_ADDER_5/XOR_0/vdd!"
+merge "FULL_ADDER_5/XOR_0/vdd!" "FULL_ADDER_4/vdd!"
+merge "FULL_ADDER_4/vdd!" "FULL_ADDER_4/XOR_0/vdd!"
+merge "FULL_ADDER_4/XOR_0/vdd!" "FULL_ADDER_3/XOR_1/vdd!"
+merge "FULL_ADDER_3/XOR_1/vdd!" "FULL_ADDER_3/vdd!"
+merge "FULL_ADDER_3/vdd!" "FULL_ADDER_3/XOR_0/vdd!"
+merge "FULL_ADDER_3/XOR_0/vdd!" "FULL_ADDER_0/vdd!"
+merge "FULL_ADDER_0/vdd!" "FULL_ADDER_0/XOR_0/vdd!"
+merge "FULL_ADDER_0/XOR_0/vdd!" "FULL_ADDER_1/XOR_1/vdd!"
+merge "FULL_ADDER_1/XOR_1/vdd!" "FULL_ADDER_1/vdd!"
+merge "FULL_ADDER_1/vdd!" "FULL_ADDER_1/XOR_0/vdd!"
+merge "FULL_ADDER_1/XOR_0/vdd!" "FULL_ADDER_2/XOR_1/vdd!"
+merge "FULL_ADDER_2/XOR_1/vdd!" "FULL_ADDER_2/vdd!"
+merge "FULL_ADDER_2/vdd!" "FULL_ADDER_2/XOR_0/vdd!"
+merge "FULL_ADDER_2/XOR_0/vdd!" "m1_n648_291#"
+merge "FULL_ADDER_7/gnd!" "FULL_ADDER_7/NAND_1/gnd!" -613585 0 0 0 0 0 0 0 0 0 0 0 0 -13055 -6304 0 0 0 0
+merge "FULL_ADDER_7/NAND_1/gnd!" "FULL_ADDER_6/gnd!"
+merge "FULL_ADDER_6/gnd!" "FULL_ADDER_5/NAND_1/gnd!"
+merge "FULL_ADDER_5/NAND_1/gnd!" "FULL_ADDER_5/gnd!"
+merge "FULL_ADDER_5/gnd!" "FULL_ADDER_4/gnd!"
+merge "FULL_ADDER_4/gnd!" "FULL_ADDER_3/NAND_1/gnd!"
+merge "FULL_ADDER_3/NAND_1/gnd!" "FULL_ADDER_3/gnd!"
+merge "FULL_ADDER_3/gnd!" "FULL_ADDER_0/gnd!"
+merge "FULL_ADDER_0/gnd!" "FULL_ADDER_1/NAND_1/gnd!"
+merge "FULL_ADDER_1/NAND_1/gnd!" "FULL_ADDER_1/gnd!"
+merge "FULL_ADDER_1/gnd!" "FULL_ADDER_2/gnd!"
+merge "FULL_ADDER_2/gnd!" "m1_n649_n42#"

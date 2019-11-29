@@ -1,0 +1,5 @@
+* SPICE3 file created from resistor.ext - technology: scmos
+
+.option scale=0.01u
+
+C0 a gnd! 495.7fF **FLOATING

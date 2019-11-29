@@ -1,0 +1,37 @@
+*CMOS Inverter without load Capacitance 
+*******************************************
+*EE311 Assignment1
+*Problem no. 4
+*Student Name     - Mayank Tantuway 
+*Student Roll No. - 170102036
+*******************************************
+
+M1 2 1 0 0 MOSN W=5U L=1U
+M2 2 1 3 3 MOSP W=5U L=1U
+VDD 3 0 DC 5V
+
+
+.MODEL MOSN NMOS VTO=0.7 KP=110U GAMMA=0.4 LAMBDA=0.04 PHI=0.7
+.MODEL MOSP PMOS VTO=-0.7 KP=50U GAMMA=0.57 LAMBDA=0.05 PHI=0.8
+
+
+Vin 1 0 pulse(0 5 0 0.1ns 0.1ns 1ns 2ns)
+*.tran 0.001ns 36.5ns 33.8ns 
+
+
+*FAll Time 
+*.tran 0.001ns 34.2ns 33.9ns 
+
+*RISE Time 
+.tran 0.001ns 35.3ns 35.0ns 
+
+
+.control
+run
+meas TRAN output_90% FIND time WHEN v(2)=4.5V CROSS=1
+meas TRAN output_10% FIND time WHEN v(2)=0.5V CROSS=1
+
+set xbrushwidth=2
+plot V(2) v(1)
+.ENDC
+.end

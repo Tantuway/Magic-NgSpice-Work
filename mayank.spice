@@ -1,0 +1,47 @@
+*Mayank
+* SPICE3 file created from AND.ext - technology: scmos
+
+.option scale=1u
+
+
+
+
+
+
+.MODEL nfet NMOS VTO=0.7 KP=110U GAMMA=0.4 LAMBDA=0.04 PHI=0.7
+.MODEL pfet PMOS VTO=-0.7 KP=50U GAMMA=0.57 LAMBDA=0.05 PHI=0.8
+
+M1000 Inverter_0/OUT Inverter_0/IN vdd vdd pfet w=16 l=2
++  ad=144 pd=50 as=304 ps=134
+M1001 Inverter_0/OUT Inverter_0/IN gnd Gnd nfet w=8 l=2
++  ad=72 pd=34 as=112 ps=60
+M1002 Inverter_0/IN NAND_0/IN_A vdd vdd pfet w=16 l=2
++  ad=192 pd=56 as=0 ps=0
+M1003 vdd NAND_0/IN_B Inverter_0/IN vdd pfet w=16 l=2
++  ad=0 pd=0 as=0 ps=0
+M1004 NAND_0/DS NAND_0/IN_A gnd Gnd nfet w=8 l=2
++  ad=96 pd=40 as=0 ps=0
+M1005 Inverter_0/IN NAND_0/IN_B NAND_0/DS Gnd nfet w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+C0 vdd Inverter_0/IN 2.0fF
+C1 NAND_0/IN_B gnd! 9.8fF
+C2 NAND_0/IN_A gnd! 7.3fF
+C3 Inverter_0/IN gnd! 15.2fF
+
+
+v3 gnd gnd! dc 0V
+VDD  vdd gnd DC 5
+
+v2 IN_A gnd PWL (0 0 2N 0 2.1N 5 4N 5 4.1N 0 6N 0 6.1N 5 8N 5 8.1N 0 10N 0 10.1N 5 12N 5 12.1N 0 14N 0 14.1N 5 16N 5 16.1N 0 ) 
+v1 IN_B gnd PWL (0 0 4N 0 4.1N 5 8N 5 8.1N 0 12N 0 12.1N 5 16N 5 16.1N 0)
+
+.tran 0.01ns 20ns 0ns 
+
+.control 
+run 
+plot V(OUT)
+
+.endc
+.end
+
+

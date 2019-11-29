@@ -1,0 +1,73 @@
+magic
+tech scmos
+timestamp 1569392509
+<< nwell >>
+rect -8 4 21 34
+<< polysilicon >>
+rect -1 22 1 25
+rect 13 22 15 25
+rect -1 -14 1 6
+rect 13 -14 15 6
+rect -1 -25 1 -22
+rect 13 -25 15 -22
+<< ndiffusion >>
+rect -2 -22 -1 -14
+rect 1 -22 13 -14
+rect 15 -22 16 -14
+<< pdiffusion >>
+rect -2 6 -1 22
+rect 1 6 5 22
+rect 9 6 13 22
+rect 15 6 16 22
+<< metal1 >>
+rect -6 30 20 33
+rect -2 26 5 30
+rect 9 26 16 30
+rect -6 22 -2 26
+rect 16 22 20 26
+rect 5 0 9 6
+rect -8 -4 -5 0
+rect 5 -4 21 0
+rect -8 -11 7 -7
+rect 16 -14 20 -4
+rect -6 -26 -2 -22
+rect -2 -30 5 -26
+rect 9 -30 16 -26
+rect -6 -34 20 -30
+<< ntransistor >>
+rect -1 -22 1 -14
+rect 13 -22 15 -14
+<< ptransistor >>
+rect -1 6 1 22
+rect 13 6 15 22
+<< polycontact >>
+rect -5 -4 -1 0
+rect 7 -11 13 -7
+<< ndcontact >>
+rect -6 -22 -2 -14
+rect 16 -22 20 -14
+<< pdcontact >>
+rect -6 6 -2 22
+rect 5 6 9 22
+rect 16 6 20 22
+<< psubstratepcontact >>
+rect -6 -30 -2 -26
+rect 5 -30 9 -26
+rect 16 -30 20 -26
+<< nsubstratencontact >>
+rect -6 26 -2 30
+rect 5 26 9 30
+rect 16 26 20 30
+<< labels >>
+rlabel metal1 20 -4 20 0 7 NAND_AB
+rlabel pdcontact 7 8 7 8 1 NAND_AB
+rlabel ndiffusion 6 -17 6 -17 1 DS
+rlabel nsubstratencontact 18 27 18 27 7 vdd!
+rlabel polycontact 11 -10 11 -10 1 IN_B
+rlabel metal1 18 -12 18 -12 7 NAND_AB
+rlabel metal1 -8 -4 -8 0 3 IN_A
+rlabel metal1 -8 -11 -8 -7 3 IN_B
+rlabel psubstratepcontact -6 -30 -2 -26 2 gnd!
+rlabel ndcontact -4 -18 -4 -18 3 gnd!
+rlabel nsubstratencontact -6 26 -2 30 3 vdd!
+<< end >>

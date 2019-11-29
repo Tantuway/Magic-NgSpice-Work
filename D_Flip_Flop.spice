@@ -1,0 +1,76 @@
+* SPICE3 file created from D_Flip_Flop.ext - technology: scmos
+
+
+
+.MODEL nfet NMOS VTO=0.7 KP=110U GAMMA=0.4 LAMBDA=0.04 PHI=0.7
+.MODEL pfet PMOS VTO=-0.7 KP=50U GAMMA=0.57 LAMBDA=0.05 PHI=0.8
+
+
+.option scale=1u
+
+M1000 QBAR Q vdd vdd pfet w=16 l=2
++  ad=192 pd=56 as=784 ps=386
+M1001 vdd NAND_3/IN_B QBAR vdd pfet w=16 l=2
++  ad=0 pd=0 as=0 ps=0
+M1002 NAND_3/DS Q gnd Gnd nfet w=8 l=2
++  ad=96 pd=40 as=232 ps=138
+M1003 QBAR NAND_3/IN_B NAND_3/DS Gnd nfet w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1004 NAND_3/IN_B NAND_2/IN_A vdd vdd pfet w=16 l=2
++  ad=192 pd=56 as=0 ps=0
+M1005 vdd CLK NAND_3/IN_B vdd pfet w=16 l=2
++  ad=0 pd=0 as=0 ps=0
+M1006 NAND_2/DS NAND_2/IN_A gnd Gnd nfet w=8 l=2
++  ad=96 pd=40 as=0 ps=0
+M1007 NAND_3/IN_B CLK NAND_2/DS Gnd nfet w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1008 NAND_2/IN_A D vdd vdd pfet w=16 l=2
++  ad=144 pd=50 as=0 ps=0
+M1009 NAND_2/IN_A D gnd Gnd nfet w=8 l=2
++  ad=72 pd=34 as=0 ps=0
+M1010 NAND_1/NAND_AB NAND_1/IN_A vdd vdd pfet w=16 l=2
++  ad=192 pd=56 as=0 ps=0
+M1011 vdd QBAR NAND_1/NAND_AB vdd pfet w=16 l=2
++  ad=0 pd=0 as=0 ps=0
+M1012 NAND_1/DS NAND_1/IN_A gnd Gnd nfet w=8 l=2
++  ad=96 pd=40 as=0 ps=0
+M1013 NAND_1/NAND_AB QBAR NAND_1/DS Gnd nfet w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1014 NAND_1/IN_A D vdd vdd pfet w=16 l=2
++  ad=192 pd=56 as=0 ps=0
+M1015 vdd CLK NAND_1/IN_A vdd pfet w=16 l=2
++  ad=0 pd=0 as=0 ps=0
+M1016 NAND_0/DS D gnd Gnd nfet w=8 l=2
++  ad=96 pd=40 as=0 ps=0
+M1017 NAND_1/IN_A CLK NAND_0/DS Gnd nfet w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+C0 NAND_1/IN_A vdd 2.0fF
+C1 QBAR vdd 2.0fF
+C2 vdd NAND_3/IN_B 2.0fF
+C3 vdd Q 2.8fF
+C4 NAND_1/NAND_AB gnd! 5.3fF
+C5 QBAR gnd! 42.1fF
+C6 NAND_1/IN_A gnd! 13.1fF
+C7 vdd gnd! 383.3fF
+C8 NAND_2/IN_A gnd! 13.3fF
+C9 NAND_3/IN_B gnd! 35.4fF
+C10 Q gnd! 32.3fF
+
+
+
+
+
+
+
+v2  gnd gnd! dc 0
+v1  vdd gnd! dc 5
+vinD  D   gnd!  pulse(0 5 0 0.1ns 0.1ns 1ns 2ns)
+VCLK CLK gnd!   pulse(0 0 2N 0 2.1N 5 4N 5 4.1N 0 6N 0 6.1N 5 8N 5 8.1N 0 10N 0 10.1N 5 12N 5 12.1N 0 14N 0 14.1N 5 16N 5 16.1N 0 ) 
+.tran 0.001ns 35.3ns 35.0ns 
+
+
+.control
+run
+plot  V(QBAR) 
+.ENDC
+.end

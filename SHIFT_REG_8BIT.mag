@@ -1,0 +1,119 @@
+magic
+tech scmos
+timestamp 1569398047
+<< metal1 >>
+rect -93 181 158 183
+rect -93 155 1600 181
+rect -93 152 158 155
+rect 386 16 398 25
+rect 386 -2 402 13
+<< metal2 >>
+rect 56 188 112 201
+rect 56 124 70 188
+rect 283 187 339 200
+rect 500 188 556 201
+rect 283 123 297 187
+rect 500 120 514 188
+rect 728 187 784 200
+rect 728 123 742 187
+rect 952 185 1008 198
+rect 952 122 966 185
+rect 1193 182 1250 196
+rect 1413 183 1469 196
+rect 1193 122 1207 182
+rect 1413 124 1427 183
+rect 1632 177 1688 190
+rect 1416 120 1423 124
+rect 1632 121 1646 177
+rect -160 -11 -151 82
+rect 64 -10 73 82
+rect 293 -10 301 81
+rect 64 -11 306 -10
+rect 519 -11 527 82
+rect 740 -11 752 85
+rect 967 -11 979 80
+rect 1194 -11 1206 81
+rect 1421 -11 1433 81
+rect -161 -12 -53 -11
+rect -37 -12 1433 -11
+rect -161 -27 1433 -12
+rect -161 -30 382 -27
+rect 386 -30 1433 -27
+rect 293 -31 301 -30
+rect 967 -31 979 -30
+<< metal3 >>
+rect -66 23 -57 25
+rect -66 17 -65 23
+rect -58 17 -57 23
+rect -66 -41 -57 17
+rect 161 24 170 25
+rect 161 18 162 24
+rect 169 18 170 24
+rect 161 -41 170 18
+rect 389 23 398 25
+rect 389 17 390 23
+rect 397 17 398 23
+rect 389 -41 398 17
+rect 611 23 619 24
+rect 611 18 612 23
+rect 617 18 619 23
+rect 611 -48 619 18
+rect 838 22 849 25
+rect 838 18 839 22
+rect 844 18 849 22
+rect 838 -40 849 18
+rect 1063 22 1073 24
+rect 1063 17 1065 22
+rect 1070 17 1073 22
+rect 1063 -40 1073 17
+<< m3contact >>
+rect -65 17 -58 23
+rect 162 18 169 24
+rect 390 17 397 23
+rect 612 18 617 23
+rect 839 18 844 22
+rect 1065 17 1070 22
+use D_Flip_Flop  D_Flip_Flop_3 /home/mayank/cad
+timestamp 1569392608
+transform 1 0 -33 0 1 90
+box -134 -92 93 68
+use D_Flip_Flop  D_Flip_Flop_0
+timestamp 1569392608
+transform 1 0 194 0 1 90
+box -134 -92 93 68
+use D_Flip_Flop  D_Flip_Flop_1
+timestamp 1569392608
+transform 1 0 421 0 1 90
+box -134 -92 93 68
+use D_Flip_Flop  D_Flip_Flop_2
+timestamp 1569392608
+transform 1 0 643 0 1 90
+box -134 -92 93 68
+use D_Flip_Flop  D_Flip_Flop_4
+timestamp 1569392608
+transform 1 0 870 0 1 90
+box -134 -92 93 68
+use D_Flip_Flop  D_Flip_Flop_7
+timestamp 1569392608
+transform 1 0 1097 0 1 90
+box -134 -92 93 68
+use D_Flip_Flop  D_Flip_Flop_6
+timestamp 1569392608
+transform 1 0 1324 0 1 90
+box -134 -92 93 68
+use D_Flip_Flop  D_Flip_Flop_5
+timestamp 1569392608
+transform 1 0 1552 0 1 90
+box -134 -92 93 68
+<< labels >>
+rlabel space -167 120 -167 124 3 REGISTER_IN
+rlabel space -167 78 -167 82 3 Register_CLK
+rlabel metal2 112 188 112 201 1 REG_OUT0
+rlabel metal2 339 187 339 200 1 REG_OUT1
+rlabel metal2 556 188 556 201 1 REG_OUT2
+rlabel metal2 784 187 784 200 1 REG_OUT3
+rlabel metal2 1008 185 1008 198 1 REG_OUT4
+rlabel metal2 1250 182 1250 196 1 REG_OUT5
+rlabel metal2 1469 183 1469 196 1 REG_OUT6
+rlabel metal2 1688 177 1688 190 7 REG_OUT7
+<< end >>

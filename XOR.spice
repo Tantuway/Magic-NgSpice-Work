@@ -1,0 +1,36 @@
+* SPICE3 file created from XOR.ext - technology: scmos
+
+.option scale=1u
+
+M1000 a_n3_n2# A vdd w_n16_50# pfet w=16 l=2
++  ad=96 pd=44 as=352 ps=172
+M1001 a_18_52# a_n3_n2# vdd w_n16_50# pfet w=16 l=2
++  ad=80 pd=42 as=0 ps=0
+M1002 XOR B a_18_52# w_n16_50# pfet w=16 l=2
++  ad=224 pd=92 as=0 ps=0
+M1003 a_47_52# a_21_19# XOR w_n16_50# pfet w=16 l=2
++  ad=80 pd=42 as=0 ps=0
+M1004 vdd a_52_45# a_47_52# w_n16_50# pfet w=16 l=2
++  ad=0 pd=0 as=0 ps=0
+M1005 vdd B a_52_45# w_n16_50# pfet w=16 l=2
++  ad=0 pd=0 as=96 ps=44
+M1006 a_n3_n2# A gnd Gnd nfet w=8 l=2
++  ad=40 pd=26 as=160 ps=104
+M1007 a_18_n2# B gnd Gnd nfet w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1008 XOR a_21_19# a_18_n2# Gnd nfet w=8 l=2
++  ad=120 pd=62 as=0 ps=0
+M1009 a_48_n2# a_n3_n2# XOR Gnd nfet w=8 l=2
++  ad=48 pd=28 as=0 ps=0
+M1010 gnd a_52_45# a_48_n2# Gnd nfet w=8 l=2
++  ad=0 pd=0 as=0 ps=0
+M1011 gnd B a_52_45# Gnd nfet w=8 l=2
++  ad=0 pd=0 as=40 ps=26
+C0 vdd w_n16_50# 8.5fF
+C1 m2_n13_20# gnd! 2.6fF **FLOATING
+C2 XOR gnd! 25.2fF
+C3 vdd gnd! 93.1fF
+C4 a_52_45# gnd! 21.0fF
+C5 a_21_19# gnd! 19.0fF
+C6 a_n3_n2# gnd! 38.4fF
+C7 w_n16_50# gnd! 5.9fF

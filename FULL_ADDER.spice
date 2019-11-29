@@ -1,0 +1,96 @@
+* SPICE3 file created from FULL_ADDER.ext - technology: scmos
+
+.option scale=1u
+
+M1000 COUT NAND_2/IN_A vdd vdd pfet w=16 l=2
++  ad=192 pd=56 as=1184 ps=596
+M1001 vdd NAND_2/IN_B COUT vdd pfet w=16 l=2
++  ad=0 pd=0 as=0 ps=0
+M1002 NAND_2/DS NAND_2/IN_A gnd Gnd nfet w=8 l=2
++  ad=96 pd=40 as=440 ps=286
+M1003 COUT NAND_2/IN_B NAND_2/DS Gnd nfet w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1004 NAND_2/IN_B B vdd vdd pfet w=16 l=2
++  ad=192 pd=56 as=0 ps=0
+M1005 vdd gnd NAND_2/IN_B vdd pfet w=16 l=2
++  ad=0 pd=0 as=0 ps=0
+M1006 NAND_1/DS B gnd Gnd nfet w=8 l=2
++  ad=96 pd=40 as=0 ps=0
+M1007 NAND_2/IN_B gnd NAND_1/DS Gnd nfet w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1008 NAND_2/IN_A CIN vdd vdd pfet w=16 l=2
++  ad=192 pd=56 as=0 ps=0
+M1009 vdd XOR_1/A NAND_2/IN_A vdd pfet w=16 l=2
++  ad=0 pd=0 as=0 ps=0
+M1010 NAND_0/DS CIN gnd Gnd nfet w=8 l=2
++  ad=96 pd=40 as=0 ps=0
+M1011 NAND_2/IN_A XOR_1/A NAND_0/DS Gnd nfet w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1012 XOR_1/a_n3_n2# XOR_1/A vdd XOR_1/w_n16_50# pfet w=16 l=2
++  ad=96 pd=44 as=0 ps=0
+M1013 XOR_1/a_18_52# XOR_1/a_n3_n2# vdd XOR_1/w_n16_50# pfet w=16 l=2
++  ad=80 pd=42 as=0 ps=0
+M1014 SUM CIN XOR_1/a_18_52# XOR_1/w_n16_50# pfet w=16 l=2
++  ad=224 pd=92 as=0 ps=0
+M1015 XOR_1/a_47_52# XOR_1/a_21_19# SUM XOR_1/w_n16_50# pfet w=16 l=2
++  ad=80 pd=42 as=0 ps=0
+M1016 vdd XOR_1/a_52_45# XOR_1/a_47_52# XOR_1/w_n16_50# pfet w=16 l=2
++  ad=0 pd=0 as=0 ps=0
+M1017 vdd CIN XOR_1/a_52_45# XOR_1/w_n16_50# pfet w=16 l=2
++  ad=0 pd=0 as=96 ps=44
+M1018 XOR_1/a_n3_n2# XOR_1/A gnd Gnd nfet w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1019 XOR_1/a_18_n2# CIN gnd Gnd nfet w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1020 SUM XOR_1/a_21_19# XOR_1/a_18_n2# Gnd nfet w=8 l=2
++  ad=120 pd=62 as=0 ps=0
+M1021 XOR_1/a_48_n2# XOR_1/a_n3_n2# SUM Gnd nfet w=8 l=2
++  ad=48 pd=28 as=0 ps=0
+M1022 gnd XOR_1/a_52_45# XOR_1/a_48_n2# Gnd nfet w=8 l=2
++  ad=0 pd=0 as=0 ps=0
+M1023 gnd CIN XOR_1/a_52_45# Gnd nfet w=8 l=2
++  ad=0 pd=0 as=40 ps=26
+M1024 XOR_0/a_n3_n2# XOR_0/A vdd XOR_0/w_n16_50# pfet w=16 l=2
++  ad=96 pd=44 as=0 ps=0
+M1025 XOR_0/a_18_52# XOR_0/a_n3_n2# vdd XOR_0/w_n16_50# pfet w=16 l=2
++  ad=80 pd=42 as=0 ps=0
+M1026 XOR_1/A B XOR_0/a_18_52# XOR_0/w_n16_50# pfet w=16 l=2
++  ad=224 pd=92 as=0 ps=0
+M1027 XOR_0/a_47_52# XOR_0/a_21_19# XOR_1/A XOR_0/w_n16_50# pfet w=16 l=2
++  ad=80 pd=42 as=0 ps=0
+M1028 vdd XOR_0/a_52_45# XOR_0/a_47_52# XOR_0/w_n16_50# pfet w=16 l=2
++  ad=0 pd=0 as=0 ps=0
+M1029 vdd B XOR_0/a_52_45# XOR_0/w_n16_50# pfet w=16 l=2
++  ad=0 pd=0 as=96 ps=44
+M1030 XOR_0/a_n3_n2# XOR_0/A gnd Gnd nfet w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1031 XOR_0/a_18_n2# B gnd Gnd nfet w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1032 XOR_1/A XOR_0/a_21_19# XOR_0/a_18_n2# Gnd nfet w=8 l=2
++  ad=120 pd=62 as=0 ps=0
+M1033 XOR_0/a_48_n2# XOR_0/a_n3_n2# XOR_1/A Gnd nfet w=8 l=2
++  ad=48 pd=28 as=0 ps=0
+M1034 gnd XOR_0/a_52_45# XOR_0/a_48_n2# Gnd nfet w=8 l=2
++  ad=0 pd=0 as=0 ps=0
+M1035 gnd B XOR_0/a_52_45# Gnd nfet w=8 l=2
++  ad=0 pd=0 as=40 ps=26
+C0 NAND_2/IN_B vdd 8.5fF
+C1 NAND_2/IN_A vdd 25.0fF
+C2 XOR_1/w_n16_50# vdd 8.5fF
+C3 XOR_1/A vdd 4.6fF
+C4 vdd XOR_0/w_n16_50# 16.4fF
+C5 m2_n16_58# gnd! 3.8fF **FLOATING
+C6 XOR_0/a_52_45# gnd! 21.0fF
+C7 XOR_0/a_21_19# gnd! 19.0fF
+C8 XOR_0/a_n3_n2# gnd! 38.4fF
+C9 XOR_0/A gnd! 26.0fF
+C10 XOR_0/w_n16_50# gnd! 4.4fF
+C11 SUM gnd! 26.6fF
+C12 vdd gnd! 351.4fF
+C13 XOR_1/a_52_45# gnd! 21.0fF
+C14 XOR_1/a_21_19# gnd! 19.0fF
+C15 XOR_1/a_n3_n2# gnd! 38.4fF
+C16 XOR_1/A gnd! 72.0fF
+C17 XOR_1/w_n16_50# gnd! 4.4fF
+C18 NAND_2/IN_A gnd! 21.4fF
+C19 NAND_2/IN_B gnd! 30.3fF

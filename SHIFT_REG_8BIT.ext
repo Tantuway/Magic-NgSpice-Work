@@ -1,0 +1,93 @@
+timestamp 1569398047
+version 8.0
+tech scmos
+style lambda=1.0(scna20_orb)
+scale 1000 1 100
+resistclasses 26670 59550 23860 19690 27260 2000000 49 26 2505830
+use D_Flip_Flop D_Flip_Flop_3 1 0 -33 0 1 90
+use D_Flip_Flop D_Flip_Flop_0 1 0 194 0 1 90
+use D_Flip_Flop D_Flip_Flop_1 1 0 421 0 1 90
+use D_Flip_Flop D_Flip_Flop_2 1 0 643 0 1 90
+use D_Flip_Flop D_Flip_Flop_4 1 0 870 0 1 90
+use D_Flip_Flop D_Flip_Flop_7 1 0 1097 0 1 90
+use D_Flip_Flop D_Flip_Flop_6 1 0 1324 0 1 90
+use D_Flip_Flop D_Flip_Flop_5 1 0 1552 0 1 90
+node "m2_1065_17#" 0 475 1065 17 v2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 25 20 0 0
+node "m2_839_18#" 0 380 839 18 v2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 20 18 0 0
+node "m2_612_18#" 0 475 612 18 v2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 25 20 0 0
+node "m2_390_17#" 0 0 390 17 v2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 42 26 0 0
+node "m2_162_18#" 0 798 162 18 v2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 42 26 0 0
+node "m2_n65_17#" 0 798 -65 17 v2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 42 26 0 0
+node "m2_n161_n30#" 4 724071 -161 -30 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 38109 4720 0 0
+node "REG_OUT7" 0 28728 1632 121 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1512 250 0 0
+node "REG_OUT6" 0 23142 1413 124 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1582 264 0 0
+node "REG_OUT5" 0 24206 1193 122 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1638 262 0 0
+node "REG_OUT4" 0 23674 952 122 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1610 264 0 0
+node "REG_OUT3" 0 23940 728 123 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1624 266 0 0
+node "REG_OUT2" 0 25004 500 120 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1680 274 0 0
+node "REG_OUT1" 0 23940 283 123 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1624 266 0 0
+node "REG_OUT0" 0 22610 56 124 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1624 266 0 0
+node "m1_386_n2#" 0 11280 386 -2 m1 0 0 0 0 0 0 0 0 0 0 0 0 240 62 0 0 0 0
+node "m1_386_16#" 0 5076 386 16 m1 0 0 0 0 0 0 0 0 0 0 0 0 108 42 0 0 0 0
+node "m1_n93_152#" 3 2.12783e+06 -93 152 m1 0 0 0 0 0 0 0 0 0 0 0 0 45273 3448 0 0 0 0
+cap "m1_n93_152#" "REG_OUT5" 16380
+cap "REG_OUT3" "m1_n93_152#" 16380
+cap "REG_OUT6" "m1_n93_152#" 16380
+cap "REG_OUT0" "m1_n93_152#" 19530
+cap "m1_n93_152#" "REG_OUT4" 16380
+cap "REG_OUT1" "m1_n93_152#" 16380
+cap "m1_n93_152#" "REG_OUT2" 16380
+cap "m2_390_17#" "m1_386_16#" 1890
+cap "D_Flip_Flop_3/m1_n38_n74#" "m2_n65_17#" 1890
+cap "m2_162_18#" "D_Flip_Flop_0/m1_n38_n74#" 1890
+cap "D_Flip_Flop_2/m1_n38_n74#" "m2_612_18#" 1125
+cap "m2_839_18#" "D_Flip_Flop_4/m1_n38_n74#" 900
+cap "m2_1065_17#" "D_Flip_Flop_7/m1_n38_n74#" 1125
+cap "D_Flip_Flop_1/NAND_0/vdd!" "m1_n93_152#" 1363
+cap "D_Flip_Flop_2/NAND_0/vdd!" "m1_n93_152#" 329
+cap "D_Flip_Flop_4/NAND_1/vdd!" "D_Flip_Flop_4/NAND_0/vdd!" 1457
+cap "D_Flip_Flop_4/NAND_0/vdd!" "D_Flip_Flop_4/NAND_0/vdd!" 1363
+cap "m1_n93_152#" "D_Flip_Flop_7/NAND_1/vdd!" 705
+cap "m1_n93_152#" "D_Flip_Flop_7/NAND_0/vdd!" 1363
+cap "D_Flip_Flop_6/NAND_0/vdd!" "m1_n93_152#" 1222
+merge "D_Flip_Flop_5/NAND_0/vdd!" "D_Flip_Flop_5/m1_n114_n92#" -718724 0 0 0 0 0 0 0 0 0 0 0 0 -14979 -2639 0 0 0 0
+merge "D_Flip_Flop_5/m1_n114_n92#" "D_Flip_Flop_6/NAND_0/vdd!"
+merge "D_Flip_Flop_6/NAND_0/vdd!" "D_Flip_Flop_7/NAND_1/vdd!"
+merge "D_Flip_Flop_7/NAND_1/vdd!" "D_Flip_Flop_7/NAND_0/vdd!"
+merge "D_Flip_Flop_7/NAND_0/vdd!" "D_Flip_Flop_4/NAND_0/vdd!"
+merge "D_Flip_Flop_4/NAND_0/vdd!" "D_Flip_Flop_4/m1_n114_n92#"
+merge "D_Flip_Flop_4/m1_n114_n92#" "D_Flip_Flop_2/NAND_0/vdd!"
+merge "D_Flip_Flop_2/NAND_0/vdd!" "D_Flip_Flop_1/NAND_1/vdd!"
+merge "D_Flip_Flop_1/NAND_1/vdd!" "D_Flip_Flop_1/NAND_0/vdd!"
+merge "D_Flip_Flop_1/NAND_0/vdd!" "D_Flip_Flop_0/NAND_1/vdd!"
+merge "D_Flip_Flop_0/NAND_1/vdd!" "D_Flip_Flop_0/NAND_0/vdd!"
+merge "D_Flip_Flop_0/NAND_0/vdd!" "D_Flip_Flop_3/m1_n114_n92#"
+merge "D_Flip_Flop_3/m1_n114_n92#" "D_Flip_Flop_0/m1_n114_n92#"
+merge "D_Flip_Flop_0/m1_n114_n92#" "D_Flip_Flop_3/NAND_0/vdd!"
+merge "D_Flip_Flop_3/NAND_0/vdd!" "D_Flip_Flop_3/Inverter_0/vdd!"
+merge "D_Flip_Flop_3/Inverter_0/vdd!" "m1_n93_152#"
+merge "D_Flip_Flop_6/D" "D_Flip_Flop_7/Q" -1330 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -126 -68 0 0
+merge "D_Flip_Flop_7/Q" "REG_OUT5"
+merge "D_Flip_Flop_5/CLK" "D_Flip_Flop_6/CLK" -5168 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -272 -221 0 0
+merge "D_Flip_Flop_6/CLK" "D_Flip_Flop_7/CLK"
+merge "D_Flip_Flop_7/CLK" "D_Flip_Flop_4/CLK"
+merge "D_Flip_Flop_4/CLK" "D_Flip_Flop_2/CLK"
+merge "D_Flip_Flop_2/CLK" "D_Flip_Flop_1/CLK"
+merge "D_Flip_Flop_1/CLK" "D_Flip_Flop_0/CLK"
+merge "D_Flip_Flop_0/CLK" "D_Flip_Flop_3/CLK"
+merge "D_Flip_Flop_3/CLK" "m2_n161_n30#"
+merge "D_Flip_Flop_0/D" "D_Flip_Flop_3/Q" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -36 0 0
+merge "D_Flip_Flop_3/Q" "REG_OUT0"
+merge "D_Flip_Flop_1/m1_n114_n92#" "m1_386_n2#" -11280 0 0 0 0 0 0 0 0 0 0 0 0 -240 -62 0 0 0 0
+merge "D_Flip_Flop_1/D" "D_Flip_Flop_0/Q" -1064 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -112 -66 0 0
+merge "D_Flip_Flop_0/Q" "REG_OUT1"
+merge "D_Flip_Flop_5/D" "D_Flip_Flop_6/Q" -1254 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -122 -70 0 0
+merge "D_Flip_Flop_6/Q" "REG_OUT6"
+merge "D_Flip_Flop_4/D" "D_Flip_Flop_2/Q" -3439 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -201 -87 0 0
+merge "D_Flip_Flop_2/Q" "REG_OUT3"
+merge "D_Flip_Flop_1/m1_n38_n74#" "m1_386_16#" -4653 0 0 0 0 0 0 0 0 0 0 0 0 -99 -40 0 0 0 0
+merge "D_Flip_Flop_2/D" "D_Flip_Flop_1/Q" -2242 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -174 -82 0 0
+merge "D_Flip_Flop_1/Q" "REG_OUT2"
+merge "D_Flip_Flop_5/Q" "REG_OUT7" -1558 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -82 -75 0 0
+merge "D_Flip_Flop_7/D" "D_Flip_Flop_4/Q" -532 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -28 -40 0 0
+merge "D_Flip_Flop_4/Q" "REG_OUT4"

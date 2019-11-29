@@ -1,0 +1,425 @@
+* SPICE3 file created from 8BIT_REG.ext - technology: scmos
+
+.option scale=1u
+
+M1000 D_Flip_Flop_1/QBAR D_Flip_Flop_1/Q vdd vdd pfet w=16 l=2
++  ad=192 pd=56 as=7056 ps=3474
+M1001 vdd D_Flip_Flop_1/NAND_3/IN_B D_Flip_Flop_1/QBAR vdd pfet w=16 l=2
++  ad=0 pd=0 as=0 ps=0
+M1002 D_Flip_Flop_1/NAND_3/DS D_Flip_Flop_1/Q gnd Gnd nfet w=8 l=2
++  ad=96 pd=40 as=2088 ps=1242
+M1003 D_Flip_Flop_1/QBAR D_Flip_Flop_1/NAND_3/IN_B D_Flip_Flop_1/NAND_3/DS Gnd nfet w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1004 D_Flip_Flop_1/NAND_3/IN_B D_Flip_Flop_1/NAND_2/IN_A vdd vdd pfet w=16 l=2
++  ad=192 pd=56 as=0 ps=0
+M1005 vdd D_Flip_Flop_1/CLK D_Flip_Flop_1/NAND_3/IN_B vdd pfet w=16 l=2
++  ad=0 pd=0 as=0 ps=0
+M1006 D_Flip_Flop_1/NAND_2/DS D_Flip_Flop_1/NAND_2/IN_A gnd Gnd nfet w=8 l=2
++  ad=96 pd=40 as=0 ps=0
+M1007 D_Flip_Flop_1/NAND_3/IN_B D_Flip_Flop_1/CLK D_Flip_Flop_1/NAND_2/DS Gnd nfet w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1008 D_Flip_Flop_1/NAND_2/IN_A D_Flip_Flop_1/D vdd vdd pfet w=16 l=2
++  ad=144 pd=50 as=0 ps=0
+M1009 D_Flip_Flop_1/NAND_2/IN_A D_Flip_Flop_1/D gnd Gnd nfet w=8 l=2
++  ad=72 pd=34 as=0 ps=0
+M1010 D_Flip_Flop_1/NAND_1/NAND_AB D_Flip_Flop_1/NAND_1/IN_A vdd vdd pfet w=16 l=2
++  ad=192 pd=56 as=0 ps=0
+M1011 vdd D_Flip_Flop_1/QBAR D_Flip_Flop_1/NAND_1/NAND_AB vdd pfet w=16 l=2
++  ad=0 pd=0 as=0 ps=0
+M1012 D_Flip_Flop_1/NAND_1/DS D_Flip_Flop_1/NAND_1/IN_A gnd Gnd nfet w=8 l=2
++  ad=96 pd=40 as=0 ps=0
+M1013 D_Flip_Flop_1/NAND_1/NAND_AB D_Flip_Flop_1/QBAR D_Flip_Flop_1/NAND_1/DS Gnd nfet w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1014 D_Flip_Flop_1/NAND_1/IN_A D_Flip_Flop_1/D vdd vdd pfet w=16 l=2
++  ad=192 pd=56 as=0 ps=0
+M1015 vdd D_Flip_Flop_1/CLK D_Flip_Flop_1/NAND_1/IN_A vdd pfet w=16 l=2
++  ad=0 pd=0 as=0 ps=0
+M1016 D_Flip_Flop_1/NAND_0/DS D_Flip_Flop_1/D gnd Gnd nfet w=8 l=2
++  ad=96 pd=40 as=0 ps=0
+M1017 D_Flip_Flop_1/NAND_1/IN_A D_Flip_Flop_1/CLK D_Flip_Flop_1/NAND_0/DS Gnd nfet w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1018 D_Flip_Flop_8/QBAR OUT7 vdd vdd pfet w=16 l=2
++  ad=192 pd=56 as=0 ps=0
+M1019 vdd D_Flip_Flop_8/NAND_3/IN_B D_Flip_Flop_8/QBAR vdd pfet w=16 l=2
++  ad=0 pd=0 as=0 ps=0
+M1020 D_Flip_Flop_8/NAND_3/DS OUT7 gnd Gnd nfet w=8 l=2
++  ad=96 pd=40 as=0 ps=0
+M1021 D_Flip_Flop_8/QBAR D_Flip_Flop_8/NAND_3/IN_B D_Flip_Flop_8/NAND_3/DS Gnd nfet w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1022 D_Flip_Flop_8/NAND_3/IN_B D_Flip_Flop_8/NAND_2/IN_A vdd vdd pfet w=16 l=2
++  ad=192 pd=56 as=0 ps=0
+M1023 vdd gnd D_Flip_Flop_8/NAND_3/IN_B vdd pfet w=16 l=2
++  ad=0 pd=0 as=0 ps=0
+M1024 D_Flip_Flop_8/NAND_2/DS D_Flip_Flop_8/NAND_2/IN_A gnd Gnd nfet w=8 l=2
++  ad=96 pd=40 as=0 ps=0
+M1025 D_Flip_Flop_8/NAND_3/IN_B gnd D_Flip_Flop_8/NAND_2/DS Gnd nfet w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1026 D_Flip_Flop_8/NAND_2/IN_A OUT6 vdd vdd pfet w=16 l=2
++  ad=144 pd=50 as=0 ps=0
+M1027 D_Flip_Flop_8/NAND_2/IN_A OUT6 gnd Gnd nfet w=8 l=2
++  ad=72 pd=34 as=0 ps=0
+M1028 D_Flip_Flop_8/NAND_1/NAND_AB D_Flip_Flop_8/NAND_1/IN_A vdd vdd pfet w=16 l=2
++  ad=192 pd=56 as=0 ps=0
+M1029 vdd D_Flip_Flop_8/QBAR D_Flip_Flop_8/NAND_1/NAND_AB vdd pfet w=16 l=2
++  ad=0 pd=0 as=0 ps=0
+M1030 D_Flip_Flop_8/NAND_1/DS D_Flip_Flop_8/NAND_1/IN_A gnd Gnd nfet w=8 l=2
++  ad=96 pd=40 as=0 ps=0
+M1031 D_Flip_Flop_8/NAND_1/NAND_AB D_Flip_Flop_8/QBAR D_Flip_Flop_8/NAND_1/DS Gnd nfet w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1032 D_Flip_Flop_8/NAND_1/IN_A OUT6 vdd vdd pfet w=16 l=2
++  ad=192 pd=56 as=0 ps=0
+M1033 vdd gnd D_Flip_Flop_8/NAND_1/IN_A vdd pfet w=16 l=2
++  ad=0 pd=0 as=0 ps=0
+M1034 D_Flip_Flop_8/NAND_0/DS OUT6 gnd Gnd nfet w=8 l=2
++  ad=96 pd=40 as=0 ps=0
+M1035 D_Flip_Flop_8/NAND_1/IN_A gnd D_Flip_Flop_8/NAND_0/DS Gnd nfet w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1036 D_Flip_Flop_7/QBAR OUT6 vdd vdd pfet w=16 l=2
++  ad=192 pd=56 as=0 ps=0
+M1037 vdd D_Flip_Flop_7/NAND_3/IN_B D_Flip_Flop_7/QBAR vdd pfet w=16 l=2
++  ad=0 pd=0 as=0 ps=0
+M1038 D_Flip_Flop_7/NAND_3/DS OUT6 gnd Gnd nfet w=8 l=2
++  ad=96 pd=40 as=0 ps=0
+M1039 D_Flip_Flop_7/QBAR D_Flip_Flop_7/NAND_3/IN_B D_Flip_Flop_7/NAND_3/DS Gnd nfet w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1040 D_Flip_Flop_7/NAND_3/IN_B D_Flip_Flop_7/NAND_2/IN_A vdd vdd pfet w=16 l=2
++  ad=192 pd=56 as=0 ps=0
+M1041 vdd gnd D_Flip_Flop_7/NAND_3/IN_B vdd pfet w=16 l=2
++  ad=0 pd=0 as=0 ps=0
+M1042 D_Flip_Flop_7/NAND_2/DS D_Flip_Flop_7/NAND_2/IN_A gnd Gnd nfet w=8 l=2
++  ad=96 pd=40 as=0 ps=0
+M1043 D_Flip_Flop_7/NAND_3/IN_B gnd D_Flip_Flop_7/NAND_2/DS Gnd nfet w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1044 D_Flip_Flop_7/NAND_2/IN_A OUT5 vdd vdd pfet w=16 l=2
++  ad=144 pd=50 as=0 ps=0
+M1045 D_Flip_Flop_7/NAND_2/IN_A OUT5 gnd Gnd nfet w=8 l=2
++  ad=72 pd=34 as=0 ps=0
+M1046 D_Flip_Flop_7/NAND_1/NAND_AB D_Flip_Flop_7/NAND_1/IN_A vdd vdd pfet w=16 l=2
++  ad=192 pd=56 as=0 ps=0
+M1047 vdd D_Flip_Flop_7/QBAR D_Flip_Flop_7/NAND_1/NAND_AB vdd pfet w=16 l=2
++  ad=0 pd=0 as=0 ps=0
+M1048 D_Flip_Flop_7/NAND_1/DS D_Flip_Flop_7/NAND_1/IN_A gnd Gnd nfet w=8 l=2
++  ad=96 pd=40 as=0 ps=0
+M1049 D_Flip_Flop_7/NAND_1/NAND_AB D_Flip_Flop_7/QBAR D_Flip_Flop_7/NAND_1/DS Gnd nfet w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1050 D_Flip_Flop_7/NAND_1/IN_A OUT5 vdd vdd pfet w=16 l=2
++  ad=192 pd=56 as=0 ps=0
+M1051 vdd gnd D_Flip_Flop_7/NAND_1/IN_A vdd pfet w=16 l=2
++  ad=0 pd=0 as=0 ps=0
+M1052 D_Flip_Flop_7/NAND_0/DS OUT5 gnd Gnd nfet w=8 l=2
++  ad=96 pd=40 as=0 ps=0
+M1053 D_Flip_Flop_7/NAND_1/IN_A gnd D_Flip_Flop_7/NAND_0/DS Gnd nfet w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1054 D_Flip_Flop_6/QBAR OUT5 vdd vdd pfet w=16 l=2
++  ad=192 pd=56 as=0 ps=0
+M1055 vdd D_Flip_Flop_6/NAND_3/IN_B D_Flip_Flop_6/QBAR vdd pfet w=16 l=2
++  ad=0 pd=0 as=0 ps=0
+M1056 D_Flip_Flop_6/NAND_3/DS OUT5 gnd Gnd nfet w=8 l=2
++  ad=96 pd=40 as=0 ps=0
+M1057 D_Flip_Flop_6/QBAR D_Flip_Flop_6/NAND_3/IN_B D_Flip_Flop_6/NAND_3/DS Gnd nfet w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1058 D_Flip_Flop_6/NAND_3/IN_B D_Flip_Flop_6/NAND_2/IN_A vdd vdd pfet w=16 l=2
++  ad=192 pd=56 as=0 ps=0
+M1059 vdd gnd D_Flip_Flop_6/NAND_3/IN_B vdd pfet w=16 l=2
++  ad=0 pd=0 as=0 ps=0
+M1060 D_Flip_Flop_6/NAND_2/DS D_Flip_Flop_6/NAND_2/IN_A gnd Gnd nfet w=8 l=2
++  ad=96 pd=40 as=0 ps=0
+M1061 D_Flip_Flop_6/NAND_3/IN_B gnd D_Flip_Flop_6/NAND_2/DS Gnd nfet w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1062 D_Flip_Flop_6/NAND_2/IN_A OUT4 vdd vdd pfet w=16 l=2
++  ad=144 pd=50 as=0 ps=0
+M1063 D_Flip_Flop_6/NAND_2/IN_A OUT4 gnd Gnd nfet w=8 l=2
++  ad=72 pd=34 as=0 ps=0
+M1064 D_Flip_Flop_6/NAND_1/NAND_AB D_Flip_Flop_6/NAND_1/IN_A vdd vdd pfet w=16 l=2
++  ad=192 pd=56 as=0 ps=0
+M1065 vdd D_Flip_Flop_6/QBAR D_Flip_Flop_6/NAND_1/NAND_AB vdd pfet w=16 l=2
++  ad=0 pd=0 as=0 ps=0
+M1066 D_Flip_Flop_6/NAND_1/DS D_Flip_Flop_6/NAND_1/IN_A gnd Gnd nfet w=8 l=2
++  ad=96 pd=40 as=0 ps=0
+M1067 D_Flip_Flop_6/NAND_1/NAND_AB D_Flip_Flop_6/QBAR D_Flip_Flop_6/NAND_1/DS Gnd nfet w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1068 D_Flip_Flop_6/NAND_1/IN_A OUT4 vdd vdd pfet w=16 l=2
++  ad=192 pd=56 as=0 ps=0
+M1069 vdd gnd D_Flip_Flop_6/NAND_1/IN_A vdd pfet w=16 l=2
++  ad=0 pd=0 as=0 ps=0
+M1070 D_Flip_Flop_6/NAND_0/DS OUT4 gnd Gnd nfet w=8 l=2
++  ad=96 pd=40 as=0 ps=0
+M1071 D_Flip_Flop_6/NAND_1/IN_A gnd D_Flip_Flop_6/NAND_0/DS Gnd nfet w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1072 D_Flip_Flop_5/QBAR OUT4 vdd vdd pfet w=16 l=2
++  ad=192 pd=56 as=0 ps=0
+M1073 vdd D_Flip_Flop_5/NAND_3/IN_B D_Flip_Flop_5/QBAR vdd pfet w=16 l=2
++  ad=0 pd=0 as=0 ps=0
+M1074 D_Flip_Flop_5/NAND_3/DS OUT4 gnd Gnd nfet w=8 l=2
++  ad=96 pd=40 as=0 ps=0
+M1075 D_Flip_Flop_5/QBAR D_Flip_Flop_5/NAND_3/IN_B D_Flip_Flop_5/NAND_3/DS Gnd nfet w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1076 D_Flip_Flop_5/NAND_3/IN_B D_Flip_Flop_5/NAND_2/IN_A vdd vdd pfet w=16 l=2
++  ad=192 pd=56 as=0 ps=0
+M1077 vdd gnd D_Flip_Flop_5/NAND_3/IN_B vdd pfet w=16 l=2
++  ad=0 pd=0 as=0 ps=0
+M1078 D_Flip_Flop_5/NAND_2/DS D_Flip_Flop_5/NAND_2/IN_A gnd Gnd nfet w=8 l=2
++  ad=96 pd=40 as=0 ps=0
+M1079 D_Flip_Flop_5/NAND_3/IN_B gnd D_Flip_Flop_5/NAND_2/DS Gnd nfet w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1080 D_Flip_Flop_5/NAND_2/IN_A OUT3 vdd vdd pfet w=16 l=2
++  ad=144 pd=50 as=0 ps=0
+M1081 D_Flip_Flop_5/NAND_2/IN_A OUT3 gnd Gnd nfet w=8 l=2
++  ad=72 pd=34 as=0 ps=0
+M1082 D_Flip_Flop_5/NAND_1/NAND_AB D_Flip_Flop_5/NAND_1/IN_A vdd vdd pfet w=16 l=2
++  ad=192 pd=56 as=0 ps=0
+M1083 vdd D_Flip_Flop_5/QBAR D_Flip_Flop_5/NAND_1/NAND_AB vdd pfet w=16 l=2
++  ad=0 pd=0 as=0 ps=0
+M1084 D_Flip_Flop_5/NAND_1/DS D_Flip_Flop_5/NAND_1/IN_A gnd Gnd nfet w=8 l=2
++  ad=96 pd=40 as=0 ps=0
+M1085 D_Flip_Flop_5/NAND_1/NAND_AB D_Flip_Flop_5/QBAR D_Flip_Flop_5/NAND_1/DS Gnd nfet w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1086 D_Flip_Flop_5/NAND_1/IN_A OUT3 vdd vdd pfet w=16 l=2
++  ad=192 pd=56 as=0 ps=0
+M1087 vdd gnd D_Flip_Flop_5/NAND_1/IN_A vdd pfet w=16 l=2
++  ad=0 pd=0 as=0 ps=0
+M1088 D_Flip_Flop_5/NAND_0/DS OUT3 gnd Gnd nfet w=8 l=2
++  ad=96 pd=40 as=0 ps=0
+M1089 D_Flip_Flop_5/NAND_1/IN_A gnd D_Flip_Flop_5/NAND_0/DS Gnd nfet w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1090 D_Flip_Flop_4/QBAR OUT3 vdd vdd pfet w=16 l=2
++  ad=192 pd=56 as=0 ps=0
+M1091 vdd D_Flip_Flop_4/NAND_3/IN_B D_Flip_Flop_4/QBAR vdd pfet w=16 l=2
++  ad=0 pd=0 as=0 ps=0
+M1092 D_Flip_Flop_4/NAND_3/DS OUT3 gnd Gnd nfet w=8 l=2
++  ad=96 pd=40 as=0 ps=0
+M1093 D_Flip_Flop_4/QBAR D_Flip_Flop_4/NAND_3/IN_B D_Flip_Flop_4/NAND_3/DS Gnd nfet w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1094 D_Flip_Flop_4/NAND_3/IN_B D_Flip_Flop_4/NAND_2/IN_A vdd vdd pfet w=16 l=2
++  ad=192 pd=56 as=0 ps=0
+M1095 vdd gnd D_Flip_Flop_4/NAND_3/IN_B vdd pfet w=16 l=2
++  ad=0 pd=0 as=0 ps=0
+M1096 D_Flip_Flop_4/NAND_2/DS D_Flip_Flop_4/NAND_2/IN_A gnd Gnd nfet w=8 l=2
++  ad=96 pd=40 as=0 ps=0
+M1097 D_Flip_Flop_4/NAND_3/IN_B gnd D_Flip_Flop_4/NAND_2/DS Gnd nfet w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1098 D_Flip_Flop_4/NAND_2/IN_A OUT2 vdd vdd pfet w=16 l=2
++  ad=144 pd=50 as=0 ps=0
+M1099 D_Flip_Flop_4/NAND_2/IN_A OUT2 gnd Gnd nfet w=8 l=2
++  ad=72 pd=34 as=0 ps=0
+M1100 D_Flip_Flop_4/NAND_1/NAND_AB D_Flip_Flop_4/NAND_1/IN_A vdd vdd pfet w=16 l=2
++  ad=192 pd=56 as=0 ps=0
+M1101 vdd D_Flip_Flop_4/QBAR D_Flip_Flop_4/NAND_1/NAND_AB vdd pfet w=16 l=2
++  ad=0 pd=0 as=0 ps=0
+M1102 D_Flip_Flop_4/NAND_1/DS D_Flip_Flop_4/NAND_1/IN_A gnd Gnd nfet w=8 l=2
++  ad=96 pd=40 as=0 ps=0
+M1103 D_Flip_Flop_4/NAND_1/NAND_AB D_Flip_Flop_4/QBAR D_Flip_Flop_4/NAND_1/DS Gnd nfet w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1104 D_Flip_Flop_4/NAND_1/IN_A OUT2 vdd vdd pfet w=16 l=2
++  ad=192 pd=56 as=0 ps=0
+M1105 vdd gnd D_Flip_Flop_4/NAND_1/IN_A vdd pfet w=16 l=2
++  ad=0 pd=0 as=0 ps=0
+M1106 D_Flip_Flop_4/NAND_0/DS OUT2 gnd Gnd nfet w=8 l=2
++  ad=96 pd=40 as=0 ps=0
+M1107 D_Flip_Flop_4/NAND_1/IN_A gnd D_Flip_Flop_4/NAND_0/DS Gnd nfet w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1108 D_Flip_Flop_3/QBAR OUT2 vdd vdd pfet w=16 l=2
++  ad=192 pd=56 as=0 ps=0
+M1109 vdd D_Flip_Flop_3/NAND_3/IN_B D_Flip_Flop_3/QBAR vdd pfet w=16 l=2
++  ad=0 pd=0 as=0 ps=0
+M1110 D_Flip_Flop_3/NAND_3/DS OUT2 gnd Gnd nfet w=8 l=2
++  ad=96 pd=40 as=0 ps
+M1111 D_Flip_Flop_3/QBAR D_Flip_Flop_3/NAND_3/IN_B D_Flip_Flop_3/NAND_3/DS Gnd nfet w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1112 D_Flip_Flop_3/NAND_3/IN_B D_Flip_Flop_3/NAND_2/IN_A vdd vdd pfet w=16 l=2
++  ad=192 pd=56 as=0 ps=0
+M1113 vdd gnd D_Flip_Flop_3/NAND_3/IN_B vdd pfet w=16 l=2
++  ad=0 pd=0 as=0 ps=0
+M1114 D_Flip_Flop_3/NAND_2/DS D_Flip_Flop_3/NAND_2/IN_A gnd Gnd nfet w=8 l=2
++  ad=96 pd=40 as=0 ps=0
+M1115 D_Flip_Flop_3/NAND_3/IN_B gnd D_Flip_Flop_3/NAND_2/DS Gnd nfet w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1116 D_Flip_Flop_3/NAND_2/IN_A OUT1 vdd vdd pfet w=16 l=2
++  ad=144 pd=50 as=0 ps=0
+M1117 D_Flip_Flop_3/NAND_2/IN_A OUT1 gnd Gnd nfet w=8 l=2
++  ad=72 pd=34 as=0 ps=0
+M1118 D_Flip_Flop_3/NAND_1/NAND_AB D_Flip_Flop_3/NAND_1/IN_A vdd vdd pfet w=16 l=2
++  ad=192 pd=56 as=0 ps=0
+M1119 vdd D_Flip_Flop_3/QBAR D_Flip_Flop_3/NAND_1/NAND_AB vdd pfet w=16 l=2
++  ad=0 pd=0 as=0 ps=0
+M1120 D_Flip_Flop_3/NAND_1/DS D_Flip_Flop_3/NAND_1/IN_A gnd Gnd nfet w=8 l=2
++  ad=96 pd=40 as=0 ps=0
+M1121 D_Flip_Flop_3/NAND_1/NAND_AB D_Flip_Flop_3/QBAR D_Flip_Flop_3/NAND_1/DS Gnd nfet w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1122 D_Flip_Flop_3/NAND_1/IN_A OUT1 vdd vdd pfet w=16 l=2
++  ad=192 pd=56 as=0 ps=0
+M1123 vdd gnd D_Flip_Flop_3/NAND_1/IN_A vdd pfet w=16 l=2
++  ad=0 pd=0 as=0 ps=0
+M1124 D_Flip_Flop_3/NAND_0/DS OUT1 gnd Gnd nfet w=8 l=2
++  ad=96 pd=40 as=0 ps=0
+M1125 D_Flip_Flop_3/NAND_1/IN_A gnd D_Flip_Flop_3/NAND_0/DS Gnd nfet w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1126 D_Flip_Flop_2/QBAR OUT1 vdd vdd pfet w=16 l=2
++  ad=192 pd=56 as=0 ps=0
+M1127 vdd D_Flip_Flop_2/NAND_3/IN_B D_Flip_Flop_2/QBAR vdd pfet w=16 l=2
++  ad=0 pd=0 as=0 ps=0
+M1128 D_Flip_Flop_2/NAND_3/DS OUT1 gnd Gnd nfet w=8 l=2
++  ad=96 pd=40 as=0 ps=0
+M1129 D_Flip_Flop_2/QBAR D_Flip_Flop_2/NAND_3/IN_B D_Flip_Flop_2/NAND_3/DS Gnd nfet w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1130 D_Flip_Flop_2/NAND_3/IN_B D_Flip_Flop_2/NAND_2/IN_A vdd vdd pfet w=16 l=2
++  ad=192 pd=56 as=0 ps=0
+M1131 vdd gnd D_Flip_Flop_2/NAND_3/IN_B vdd pfet w=16 l=2
++  ad=0 pd=0 as=0 ps=0
+M1132 D_Flip_Flop_2/NAND_2/DS D_Flip_Flop_2/NAND_2/IN_A gnd Gnd nfet w=8 l=2
++  ad=96 pd=40 as=0 ps=0
+M1133 D_Flip_Flop_2/NAND_3/IN_B gnd D_Flip_Flop_2/NAND_2/DS Gnd nfet w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1134 D_Flip_Flop_2/NAND_2/IN_A OUT0 vdd vdd pfet w=16 l=2
++  ad=144 pd=50 as=0 ps=0
+M1135 D_Flip_Flop_2/NAND_2/IN_A OUT0 gnd Gnd nfet w=8 l=2
++  ad=72 pd=34 as=0 ps=0
+M1136 D_Flip_Flop_2/NAND_1/NAND_AB D_Flip_Flop_2/NAND_1/IN_A vdd vdd pfet w=16 l=2
++  ad=192 pd=56 as=0 ps=0
+M1137 vdd D_Flip_Flop_2/QBAR D_Flip_Flop_2/NAND_1/NAND_AB vdd pfet w=16 l=2
++  ad=0 pd=0 as=0 ps=0
+M1138 D_Flip_Flop_2/NAND_1/DS D_Flip_Flop_2/NAND_1/IN_A gnd Gnd nfet w=8 l=2
++  ad=96 pd=40 as=0 ps=0
+M1139 D_Flip_Flop_2/NAND_1/NAND_AB D_Flip_Flop_2/QBAR D_Flip_Flop_2/NAND_1/DS Gnd nfet w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1140 D_Flip_Flop_2/NAND_1/IN_A OUT0 vdd vdd pfet w=16 l=2
++  ad=192 pd=56 as=0 ps=0
+M1141 vdd gnd D_Flip_Flop_2/NAND_1/IN_A vdd pfet w=16 l=2
++  ad=0 pd=0 as=0 ps=0
+M1142 D_Flip_Flop_2/NAND_0/DS OUT0 gnd Gnd nfet w=8 l=2
++  ad=96 pd=40 as=0 ps=0
+M1143 D_Flip_Flop_2/NAND_1/IN_A gnd D_Flip_Flop_2/NAND_0/DS Gnd nfet w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1144 D_Flip_Flop_0/QBAR OUT0 vdd vdd pfet w=16 l=2
++  ad=192 pd=56 as=0 ps=0
+M1145 vdd D_Flip_Flop_0/NAND_3/IN_B D_Flip_Flop_0/QBAR vdd pfet w=16 l=2
++  ad=0 pd=0 as=0 ps=0
+M1146 D_Flip_Flop_0/NAND_3/DS OUT0 gnd Gnd nfet w=8 l=2
++  ad=96 pd=40 as=0 ps=0
+M1147 D_Flip_Flop_0/QBAR D_Flip_Flop_0/NAND_3/IN_B D_Flip_Flop_0/NAND_3/DS Gnd nfet w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1148 D_Flip_Flop_0/NAND_3/IN_B D_Flip_Flop_0/NAND_2/IN_A vdd vdd pfet w=16 l=2
++  ad=192 pd=56 as=0 ps=0
+M1149 vdd gnd D_Flip_Flop_0/NAND_3/IN_B vdd pfet w=16 l=2
++  ad=0 pd=0 as=0 ps=0
+M1150 D_Flip_Flop_0/NAND_2/DS D_Flip_Flop_0/NAND_2/IN_A gnd Gnd nfet w=8 l=2
++  ad=96 pd=40 as=0 ps=0
+M1151 D_Flip_Flop_0/NAND_3/IN_B gnd D_Flip_Flop_0/NAND_2/DS Gnd nfet w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1152 D_Flip_Flop_0/NAND_2/IN_A D_Flip_Flop_0/D vdd vdd pfet w=16 l=2
++  ad=144 pd=50 as=0 ps=0
+M1153 D_Flip_Flop_0/NAND_2/IN_A D_Flip_Flop_0/D gnd Gnd nfet w=8 l=2
++  ad=72 pd=34 as=0 ps=0
+M1154 D_Flip_Flop_0/NAND_1/NAND_AB D_Flip_Flop_0/NAND_1/IN_A vdd vdd pfet w=16 l=2
++  ad=192 pd=56 as=0 ps=0
+M1155 vdd D_Flip_Flop_0/QBAR D_Flip_Flop_0/NAND_1/NAND_AB vdd pfet w=16 l=2
++  ad=0 pd=0 as=0 ps=0
+M1156 D_Flip_Flop_0/NAND_1/DS D_Flip_Flop_0/NAND_1/IN_A gnd Gnd nfet w=8 l=2
++  ad=96 pd=40 as=0 ps=0
+M1157 D_Flip_Flop_0/NAND_1/NAND_AB D_Flip_Flop_0/QBAR D_Flip_Flop_0/NAND_1/DS Gnd nfet w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1158 D_Flip_Flop_0/NAND_1/IN_A D_Flip_Flop_0/D vdd vdd pfet w=16 l=2
++  ad=192 pd=56 as=0 ps=0
+M1159 vdd gnd D_Flip_Flop_0/NAND_1/IN_A vdd pfet w=16 l=2
++  ad=0 pd=0 as=0 ps=0
+M1160 D_Flip_Flop_0/NAND_0/DS D_Flip_Flop_0/D gnd Gnd nfet w=8 l=2
++  ad=96 pd=40 as=0 ps=0
+M1161 D_Flip_Flop_0/NAND_1/IN_A gnd D_Flip_Flop_0/NAND_0/DS Gnd nfet w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+C0 vdd D_Flip_Flop_2/NAND_3/IN_B 2.0fF
+C1 vdd OUT1 28.5fF
+C2 vdd D_Flip_Flop_0/NAND_1/IN_A 2.0fF
+C3 vdd D_Flip_Flop_7/NAND_1/IN_A 2.0fF
+C4 vdd D_Flip_Flop_0/D 11.3fF
+C5 vdd OUT5 28.5fF
+C6 vdd D_Flip_Flop_4/NAND_1/IN_A 2.0fF
+C7 vdd OUT2 28.5fF
+C8 vdd D_Flip_Flop_0/QBAR 2.0fF
+C9 vdd D_Flip_Flop_4/QBAR 2.0fF
+C10 vdd D_Flip_Flop_7/QBAR 2.0fF
+C11 vdd D_Flip_Flop_5/NAND_1/IN_A 2.0fF
+C12 vdd D_Flip_Flop_5/NAND_3/IN_B 2.0fF
+C13 vdd OUT3 28.5fF
+C14 vdd D_Flip_Flop_2/NAND_1/IN_A 2.0fF
+C15 vdd OUT0 28.5fF
+C16 vdd D_Flip_Flop_2/QBAR 2.0fF
+C17 vdd D_Flip_Flop_5/QBAR 2.0fF
+C18 vdd D_Flip_Flop_3/NAND_1/IN_A 2.0fF
+C19 vdd D_Flip_Flop_6/NAND_1/IN_A 2.0fF
+C20 vdd OUT6 28.5fF
+C21 vdd D_Flip_Flop_3/NAND_3/IN_B 2.0fF
+C22 D_Flip_Flop_7/NAND_3/IN_B vdd 2.0fF
+C23 vdd D_Flip_Flop_6/NAND_3/IN_B 2.0fF
+C24 vdd D_Flip_Flop_8/NAND_3/IN_B 2.0fF
+C25 vdd OUT4 28.5fF
+C26 D_Flip_Flop_8/NAND_1/IN_A vdd 2.0fF
+C27 vdd D_Flip_Flop_8/QBAR 2.0fF
+C28 vdd D_Flip_Flop_3/QBAR 2.0fF
+C29 vdd D_Flip_Flop_6/QBAR 2.0fF
+C30 vdd D_Flip_Flop_1/NAND_1/IN_A 2.0fF
+C31 vdd D_Flip_Flop_0/NAND_3/IN_B 2.0fF
+C32 D_Flip_Flop_1/D vdd 11.3fF
+C33 vdd D_Flip_Flop_1/Q 2.8fF
+C34 vdd D_Flip_Flop_4/NAND_3/IN_B 2.0fF
+C35 vdd OUT7 2.8fF
+C36 vdd D_Flip_Flop_1/QBAR 2.0fF
+C37 D_Flip_Flop_1/CLK vdd 13.1fF
+C38 vdd D_Flip_Flop_1/NAND_3/IN_B 2.0fF
+C39 D_Flip_Flop_0/D gnd! 44.0fF
+C40 D_Flip_Flop_0/NAND_1/NAND_AB gnd! 5.3fF
+C41 D_Flip_Flop_0/QBAR gnd! 42.1fF
+C42 D_Flip_Flop_0/NAND_1/IN_A gnd! 13.1fF
+C43 D_Flip_Flop_0/NAND_2/IN_A gnd! 13.3fF
+C44 D_Flip_Flop_0/NAND_3/IN_B gnd! 35.4fF
+C45 OUT0 gnd! 81.3fF
+C46 D_Flip_Flop_2/NAND_1/NAND_AB gnd! 5.3fF
+C47 D_Flip_Flop_2/QBAR gnd! 42.1fF
+C48 D_Flip_Flop_2/NAND_1/IN_A gnd! 13.1fF
+C49 D_Flip_Flop_2/NAND_2/IN_A gnd! 13.3fF
+C50 D_Flip_Flop_2/NAND_3/IN_B gnd! 35.4fF
+C51 OUT1 gnd! 81.5fF
+C52 D_Flip_Flop_3/NAND_1/NAND_AB gnd! 5.3fF
+C53 D_Flip_Flop_3/QBAR gnd! 42.1fF
+C54 D_Flip_Flop_3/NAND_1/IN_A gnd! 13.1fF
+C55 D_Flip_Flop_3/NAND_2/IN_A gnd! 13.3fF
+C56 D_Flip_Flop_3/NAND_3/IN_B gnd! 35.4fF
+C57 OUT2 gnd! 81.3fF
+C58 D_Flip_Flop_4/NAND_1/NAND_AB gnd! 5.3fF
+C59 D_Flip_Flop_4/QBAR gnd! 42.1fF
+C60 D_Flip_Flop_4/NAND_1/IN_A gnd! 13.1fF
+C61 D_Flip_Flop_4/NAND_2/IN_A gnd! 13.3fF
+C62 D_Flip_Flop_4/NAND_3/IN_B gnd! 35.4fF
+C63 OUT3 gnd! 81.5fF
+C64 D_Flip_Flop_5/NAND_1/NAND_AB gnd! 5.3fF
+C65 D_Flip_Flop_5/QBAR gnd! 42.1fF
+C66 D_Flip_Flop_5/NAND_1/IN_A gnd! 13.1fF
+C67 D_Flip_Flop_5/NAND_2/IN_A gnd! 13.3fF
+C68 D_Flip_Flop_5/NAND_3/IN_B gnd! 35.4fF
+C69 OUT4 gnd! 81.5fF
+C70 D_Flip_Flop_6/NAND_1/NAND_AB gnd! 5.3fF
+C71 D_Flip_Flop_6/QBAR gnd! 42.1fF
+C72 D_Flip_Flop_6/NAND_1/IN_A gnd! 13.1fF
+C73 D_Flip_Flop_6/NAND_2/IN_A gnd! 13.3fF
+C74 D_Flip_Flop_6/NAND_3/IN_B gnd! 35.4fF
+C75 OUT5 gnd! 81.5fF
+C76 D_Flip_Flop_7/NAND_1/NAND_AB gnd! 5.3fF
+C77 D_Flip_Flop_7/QBAR gnd! 42.1fF
+C78 D_Flip_Flop_7/NAND_1/IN_A gnd! 13.1fF
+C79 D_Flip_Flop_7/NAND_2/IN_A gnd! 13.3fF
+C80 D_Flip_Flop_7/NAND_3/IN_B gnd! 35.4fF
+C81 OUT6 gnd! 81.5fF
+C82 D_Flip_Flop_8/NAND_1/NAND_AB gnd! 5.3fF
+C83 D_Flip_Flop_8/QBAR gnd! 42.1fF
+C84 D_Flip_Flop_8/NAND_1/IN_A gnd! 13.1fF
+C85 D_Flip_Flop_8/NAND_2/IN_A gnd! 13.3fF
+C86 D_Flip_Flop_8/NAND_3/IN_B gnd! 35.4fF
+C87 OUT7 gnd! 43.2fF
+C88 D_Flip_Flop_1/CLK gnd! 51.8fF
+C89 D_Flip_Flop_1/D gnd! 42.9fF
+C90 D_Flip_Flop_1/NAND_1/NAND_AB gnd! 5.3fF
+C91 D_Flip_Flop_1/QBAR gnd! 42.1fF
+C92 D_Flip_Flop_1/NAND_1/IN_A gnd! 12.8fF
+C93 vdd gnd! 6345.6fF
+C94 D_Flip_Flop_1/NAND_2/IN_A gnd! 13.1fF
+C95 D_Flip_Flop_1/NAND_3/IN_B gnd! 35.2fF
+C96 D_Flip_Flop_1/Q gnd! 32.3fF

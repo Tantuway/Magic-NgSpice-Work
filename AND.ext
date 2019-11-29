@@ -1,0 +1,26 @@
+timestamp 1569346130
+version 8.0
+tech scmos
+style lambda=1.0(scna20_orb)
+scale 1000 1 100
+resistclasses 26670 59550 23860 19690 27260 2000000 49 26 2505830
+use NAND NAND_0 1 0 9 0 1 36
+use Inverter Inverter_0 1 0 44 0 1 37
+node "m1_3_0#" 0 28200 3 0 m1 0 0 0 0 0 0 0 0 0 0 0 0 600 140 0 0 0 0
+node "IN2" 0 752 -2 25 m1 0 0 0 0 0 0 0 0 0 0 0 0 16 16 0 0 0 0
+node "AND" 0 2115 60 30 m1 0 0 0 0 0 0 0 0 0 0 0 0 45 28 0 0 0 0
+node "m1_28_31#" 0 3243 28 31 m1 0 0 0 0 0 0 0 0 0 0 0 0 69 40 0 0 0 0
+node "IN1" 0 752 -2 32 m1 0 0 0 0 0 0 0 0 0 0 0 0 16 16 0 0 0 0
+node "m1_26_62#" 0 0 26 62 m1 0 0 0 0 0 0 0 0 0 0 0 0 266 90 0 0 0 0
+node "w_26_62#" 4370 0 26 62 nw 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1071 136
+cap "w_26_62#" "m1_26_62#" 12502
+merge "Inverter_0/OUT" "AND" -470 0 0 0 0 0 0 0 0 0 0 0 0 -10 -14 0 0 0 0
+merge "Inverter_0/gnd!" "NAND_0/gnd!" -14100 0 0 0 0 0 0 0 0 0 0 0 0 -300 -122 0 0 0 0
+merge "NAND_0/gnd!" "m1_3_0#"
+merge "Inverter_0/IN" "NAND_0/NAND_AB" -705 0 0 0 0 0 0 0 0 0 0 0 0 -15 -28 0 0 0 0
+merge "NAND_0/NAND_AB" "m1_28_31#"
+merge "Inverter_0/vdd!" "NAND_0/vdd!" 0 0 0 0 0 0 0 0 0 0 0 0 0 -165 -80 0 0 -723 -172
+merge "NAND_0/vdd!" "w_26_62#"
+merge "w_26_62#" "m1_26_62#"
+merge "NAND_0/IN_A" "IN1" -188 0 0 0 0 0 0 0 0 0 0 0 0 -4 -10 0 0 0 0
+merge "NAND_0/IN_B" "IN2" -188 0 0 0 0 0 0 0 0 0 0 0 0 -4 -10 0 0 0 0

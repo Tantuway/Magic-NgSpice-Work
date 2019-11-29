@@ -1,0 +1,45 @@
+magic
+tech scmos
+timestamp 1569433945
+<< metal1 >>
+rect -648 291 1986 312
+rect -649 3 6 7
+rect -649 -1 656 3
+rect -649 -4 1951 -1
+rect -649 -42 1988 -4
+rect 1 -46 1988 -42
+rect 647 -50 1988 -46
+rect 1333 -53 1988 -50
+use FULL_ADDER  FULL_ADDER_2
+timestamp 1569429081
+transform 1 0 -647 0 1 190
+box -36 -185 289 121
+use FULL_ADDER  FULL_ADDER_1
+timestamp 1569429081
+transform 1 0 -308 0 1 187
+box -36 -185 289 121
+use FULL_ADDER  FULL_ADDER_0
+timestamp 1569429081
+transform 1 0 36 0 1 185
+box -36 -185 289 121
+use FULL_ADDER  FULL_ADDER_3
+timestamp 1569429081
+transform 1 0 374 0 1 184
+box -36 -185 289 121
+use FULL_ADDER  FULL_ADDER_4
+timestamp 1569429081
+transform 1 0 713 0 1 181
+box -36 -185 289 121
+use FULL_ADDER  FULL_ADDER_5
+timestamp 1569429081
+transform 1 0 1047 0 1 179
+box -36 -185 289 121
+use FULL_ADDER  FULL_ADDER_6
+timestamp 1569429081
+transform 1 0 1385 0 1 181
+box -36 -185 289 121
+use FULL_ADDER  FULL_ADDER_7
+timestamp 1569429081
+transform 1 0 1719 0 1 179
+box -36 -185 289 121
+<< end >>
